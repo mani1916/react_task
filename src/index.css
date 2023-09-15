@@ -5,9 +5,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    
+}
+.appp{
+  margin-top: 100%;
+  /* border: 2px black solid; */
+  
+}
+.colorvalue{
+  border: 2px black solid;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.AddColour input{
+  margin-top: 10%;
+  width: 150px;
+  height: 25px;
+  /* border: 2px solid black; */
+}
+
+.AddColour input::placeholder{
+  /* border: 2px solid rgb(94, 113, 167);
+   */
+   font-size: medium;
+
+}
+
+.Toogle{
+  margin-top: 7%;
+}
+.Toogle button{
+  width: 160px;
+  height: 30px;
 }
