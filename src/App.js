@@ -1,26 +1,19 @@
-// import logo from './logo.svg';
-import "./App.css";
-import Color from "./components/Color";
-import AddColour from "./components/AddColour";
-import Toogle from "./components/Toogle";
-import { useState } from "react";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Toogle from './components/Toogle';
+import Color from './components/Color';
+import { DataProvider } from './context/DataContext';
 
 function App() {
-  const [color, setColor] = useState("Empty-value");
-  // console.log(color)
-  const [toogle, setToggle] = useState(true);
-  // console.log(toogle)
   return (
-    <div className="appp">
-      <Color colorvalue={color} toogle={toogle} />
-      {/* <p>{color}</p> */}
-      <AddColour
-        color={color}
-        // handlecolor={handlecolor}
-        setColor={setColor}
-      />
-      <Toogle toogle={toogle} setToggle={setToggle} />
-    </div>
+    <BrowserRouter>
+      <DataProvider>
+        <Routes>
+          <Route path="/" element={<Toogle />} />
+          <Route path="/1" element={<Color />} />
+        </Routes>
+      </DataProvider>
+    </BrowserRouter>
   );
 }
 

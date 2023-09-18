@@ -1,0 +1,10 @@
+.background-container {
+    background-image: url(../images/nn.jpg);
+    background-size: cover; /* Adjust this based on your preference */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: keeps the image fixed while scrolling */
+    /* Add other styles as needed */
+    width: 100%; /* Make the container fill the entire viewport */
+    height: 100vh; /* Make the container full-height */
+  }
+  
